@@ -7,10 +7,14 @@ import java.util.Scanner;
 
 public class Utility {
 
-    public static void welcome(){
+    //Start point and welcome
+    public static void start(){
         System.out.println("================================== WELCOME TO THE SYSTEM ==================================");
+        //Calling to show menu
         menu();
     }
+
+    //Show multiple available menus
     private static void menu(){
         boolean showMenu = true;
         do{
@@ -54,6 +58,7 @@ public class Utility {
         }while (true);
     }
 
+    //Print menu
     private static void printMenu(){
         System.out.println("1. Show all songs");
         System.out.println("2. Add a song");
@@ -61,6 +66,8 @@ public class Utility {
         System.out.println("4. Delete a song");
         System.out.println("5. Update a song");
     }
+
+    //Validate the valid given option
     public static int validateOption(String o) {
         int option = 0;
         try{
@@ -71,11 +78,13 @@ public class Utility {
         return option;
     }
 
+    //Get all songs from database
     public static void getAllSongs(){
         System.out.println("===> Show All Songs ");
         SongService.getAllSongs();
     }
 
+    //Get a specific song by given id
     public static void getSongById(){
         int songId = 0;
         System.out.println("===> Find a song ");
@@ -91,6 +100,7 @@ public class Utility {
         SongService.getSongById(songId);
     }
 
+    //Add a new song record into database
     public static void addSong(){
         Scanner scanner = new Scanner(System.in);
         System.out.print("Title => ");
@@ -103,6 +113,7 @@ public class Utility {
         SongService.addSong(song);
     }
 
+    //Delete a specific song by given id
     public static void deleteSong(){
         int songId = 0;
         System.out.println("===> Delete a song ");
@@ -118,6 +129,7 @@ public class Utility {
         SongService.deleteSong(songId);
     }
 
+    //Update a specific song by given id
     public static  void updateSong(){
         int songId = 0;
         System.out.println("===> Update a song ");
@@ -142,12 +154,14 @@ public class Utility {
 
     }
 
+    //Print table header
     public static void printHeader(){
         System.out.format("+-----+----------------------+--------+---------------------+-------------+---------------+%n");
         System.out.format("| ID  |        TITLE         |   YEAR |     ARTIST NAME     | ARTIST TYPE |  ARTIST NAT.  |%n");
         System.out.format("+-----+----------------------+--------+---------------------+-------------+---------------+%n");
     }
 
+    //Print table footer
     public static void printFooter(){
         System.out.format("+-----+----------------------+--------+---------------------+-------------+---------------+%n");
     }

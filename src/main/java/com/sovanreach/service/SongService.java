@@ -9,16 +9,20 @@ import java.sql.ResultSet;
 import java.sql.Statement;
 
 public class SongService {
+    //Constants declaration
     private static Connection connection = Database.connect();
     private static Statement stmt = null;
     private static PreparedStatement pstmt = null;
     private static String leftAlignFormat = "| %-3d | %-20s | %-6d | %-19s | %-11s | %-13s |%n";
+    //SQL stored variables
     private static String SELECT_ALL_SQL = "SELECT * FROM songs as s INNER JOIN artists as a on s.artist_id = a.id ";
     private static String SELECT_ONE_SQL = "SELECT * FROM songs as s INNER JOIN artists as a on s.artist_id = a.id where s.id = ? ";
     private static String INSERT__SQL = "INSERT INTO songs(title, release_year, artist_id) VALUES(?,?,?)";
     private static String SELECT_LAST_SQL = "SELECT * FROM songs as s INNER JOIN artists as a on s.artist_id = a.id ORDER BY s.id DESC LIMIT 1";
     private static String DELETE_SQL = "DELETE FROM songs as s WHERE s.id = ?";
     private static String UPDATE_SQL = "UPDATE songs as s SET title = ?, release_year = ?, artist_id = ? where s.id = ? ";
+
+    //Get all song from database
     public static void getAllSongs(){
         try {
             stmt = connection.createStatement();
@@ -47,6 +51,7 @@ public class SongService {
         }
     }
 
+    //Get a specific song by given id
     public static void getSongById(int songId){
         try {
             pstmt = connection.prepareStatement(SELECT_ONE_SQL);
@@ -76,6 +81,7 @@ public class SongService {
         }
     }
 
+    //Add a new song record
     public static void addSong(Song song){
         try {
             pstmt = connection.prepareStatement(INSERT__SQL);
@@ -104,6 +110,7 @@ public class SongService {
         }
     }
 
+    //Delete a specific song by given id
     public static void deleteSong(int songId){
         try {
             pstmt = connection.prepareStatement(DELETE_SQL);
@@ -117,6 +124,7 @@ public class SongService {
         }
     }
 
+    //Update a specific song by given id
     public static  void updateSong(Song newSong){
         Song oldSong = getSongObject(newSong.getId());
         if(oldSong.getTitle() == ""){
@@ -144,6 +152,8 @@ public class SongService {
         }
 
     }
+
+    //Get song object to update
     public static Song getSongObject(int songId){
         Song song = null;
         try {

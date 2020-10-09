@@ -2,23 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5fbca6db-e568-427b-84c5-d4413ad7ccd3" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/DatabaseProject.iml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sovanreach/Main.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Artist.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sovanreach/model/Artist.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/model/Song.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sovanreach/model/Song.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/service/SongService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sovanreach/service/SongService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utility/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sovanreach/utility/Database.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/utility/Utility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sovanreach/utility/Utility.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/META-INF/DatabaseProject.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/Main.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/Artist.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/model/Song.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/service/SongService.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utility/Database.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/target/classes/utility/Utility.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sovanreach/Main.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sovanreach/Main.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sovanreach/service/SongService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sovanreach/service/SongService.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sovanreach/utility/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sovanreach/utility/Database.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/com/sovanreach/utility/Utility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sovanreach/utility/Utility.java" afterDir="false" />
     </list>
     <ignored path="$PROJECT_DIR$/target/" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -49,13 +36,13 @@
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
-          <entry key="java" value="945" />
+          <entry key="java" value="1741" />
           <entry key="xml" value="36" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
-          <entry key="JAVA" value="945" />
+          <entry key="JAVA" value="1741" />
           <entry key="XML" value="36" />
         </counts>
       </usages-collector>
@@ -66,8 +53,8 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sovanreach/Main.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="114">
-              <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
+            <state relative-caret-position="95">
+              <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
               <folding>
                 <element signature="e#88#89#0" expanded="true" />
                 <element signature="e#121#122#0" expanded="true" />
@@ -76,11 +63,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sovanreach/utility/Database.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="266">
-              <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
+            <state relative-caret-position="299">
+              <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
             </state>
           </provider>
         </entry>
@@ -88,17 +75,17 @@
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sovanreach/utility/Utility.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="360">
-              <caret line="133" column="38" selection-start-line="133" selection-start-column="38" selection-end-line="133" selection-end-column="38" />
+            <state relative-caret-position="52">
+              <caret line="141" column="56" lean-forward="true" selection-start-line="141" selection-start-column="56" selection-end-line="141" selection-end-column="56" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/sovanreach/service/SongService.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="182">
-              <caret line="78" column="32" lean-forward="true" selection-start-line="78" selection-start-column="32" selection-end-line="78" selection-end-column="32" />
+            <state relative-caret-position="-4">
+              <caret line="147" selection-start-line="147" selection-end-line="147" />
               <folding>
                 <element signature="imports" expanded="true" />
               </folding>
@@ -133,9 +120,11 @@
         <option value="$PROJECT_DIR$/src/main/java/utility/Database.java" />
         <option value="$PROJECT_DIR$/src/main/java/utility/Utility.java" />
         <option value="$PROJECT_DIR$/src/main/java/service/SongService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sovanreach/Main.java" />
         <option value="$PROJECT_DIR$/pom.xml" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sovanreach/Main.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sovanreach/utility/Utility.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/sovanreach/service/SongService.java" />
+        <option value="$PROJECT_DIR$/src/main/java/com/sovanreach/utility/Database.java" />
       </list>
     </option>
   </component>
@@ -216,7 +205,7 @@
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
-    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1602258587290" />
+    <property name="com.android.tools.idea.instantapp.provision.ProvisionBeforeRunTaskProvider.myTimeStamp" value="1602258894872" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
@@ -262,12 +251,12 @@
       <option name="presentableId" value="Default" />
       <updated>1602231680962</updated>
       <workItem from="1602231683912" duration="11321000" />
-      <workItem from="1602253180535" duration="4689000" />
+      <workItem from="1602253180535" duration="4996000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="4689000" />
+    <option name="totallyTimeSpent" value="4996000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="23" width="1920" height="1177" extended-state="6" />
@@ -280,7 +269,7 @@
       <window_info id="UI Designer" />
       <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.18615879" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info anchor="bottom" id="Terminal" weight="0.3298872" />
+      <window_info active="true" anchor="bottom" id="Terminal" visible="true" weight="0.3298872" />
       <window_info anchor="bottom" id="Event Log" side_tool="true" />
       <window_info anchor="bottom" id="Messages" weight="0.3298872" />
       <window_info anchor="bottom" id="Database Changes" show_stripe_button="false" />
@@ -288,7 +277,7 @@
       <window_info anchor="bottom" id="Flutter Performance" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.3298872" />
+      <window_info anchor="bottom" id="Run" order="2" weight="0.3298872" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -351,31 +340,6 @@
     <state x="947" y="410" key="extract.method.dialog/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1602246522040" />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sovanreach/utility/Database.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="266">
-          <caret line="17" column="39" selection-start-line="17" selection-start-column="39" selection-end-line="17" selection-end-column="39" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sovanreach/utility/Utility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="360">
-          <caret line="133" column="38" selection-start-line="133" selection-start-column="38" selection-end-line="133" selection-end-column="38" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sovanreach/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="114">
-          <caret line="6" column="26" selection-start-line="6" selection-start-column="26" selection-end-line="6" selection-end-column="26" />
-          <folding>
-            <element signature="e#88#89#0" expanded="true" />
-            <element signature="e#121#122#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/pom.xml">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="128">
@@ -383,13 +347,38 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sovanreach/utility/Utility.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="52">
+          <caret line="141" column="56" lean-forward="true" selection-start-line="141" selection-start-column="56" selection-end-line="141" selection-end-column="56" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/sovanreach/service/SongService.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="182">
-          <caret line="78" column="32" lean-forward="true" selection-start-line="78" selection-start-column="32" selection-end-line="78" selection-end-column="32" />
+        <state relative-caret-position="-4">
+          <caret line="147" selection-start-line="147" selection-end-line="147" />
           <folding>
             <element signature="imports" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sovanreach/Main.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="95">
+          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
+          <folding>
+            <element signature="e#88#89#0" expanded="true" />
+            <element signature="e#121#122#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/sovanreach/utility/Database.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="299">
+          <caret line="30" column="5" lean-forward="true" selection-start-line="30" selection-start-column="5" selection-end-line="30" selection-end-column="5" />
         </state>
       </provider>
     </entry>

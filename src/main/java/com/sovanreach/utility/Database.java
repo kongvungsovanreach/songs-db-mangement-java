@@ -15,6 +15,7 @@ public class Database {
     private static Connection connection;
     private static Properties properties;
 
+    //Connect to database and return connection object ot reuse
     public static Connection connect(){
         if (connection == null) {
             try {
