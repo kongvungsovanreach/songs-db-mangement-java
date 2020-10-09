@@ -40,9 +40,9 @@ public class SongService {
                 }
                 Utility.printFooter();
             }else {
-                System.out.println("+++++++++++++++++++++++");
+                System.out.println("\n+++++++++++++++++++++++");
                 System.out.println("+    NO DATA FOUND    +");
-                System.out.println("+++++++++++++++++++++++");
+                System.out.println("+++++++++++++++++++++++\n");
                 return;
             }
             rs.close();
@@ -70,9 +70,9 @@ public class SongService {
                 }
                 Utility.printFooter();
             }else {
-                System.out.println("+++++++++++++++++++++++");
+                System.out.println("\n+++++++++++++++++++++++");
                 System.out.println("+    NO DATA FOUND    +");
-                System.out.println("+++++++++++++++++++++++");
+                System.out.println("+++++++++++++++++++++++\n");
                 return;
             }
             rs.close();
@@ -103,7 +103,9 @@ public class SongService {
             }
             Utility.printFooter();
             rs.close();
-            System.out.println("Song inserted successfully.");
+            System.out.println("\n++++++++++++++++++++++++++++++++++++");
+            System.out.println("+    Song inserted successfully    +");
+            System.out.println("++++++++++++++++++++++++++++++++++++\n");
         }catch (Exception e){
             System.out.println("Error inserting song.");
             e.printStackTrace(System.out);
@@ -116,8 +118,9 @@ public class SongService {
             pstmt = connection.prepareStatement(DELETE_SQL);
             pstmt.setInt(1, songId);
             pstmt.executeUpdate();
-            getSongById(songId);
-            System.out.println("Song deleted successfully.");
+            System.out.println("\n+++++++++++++++++++++++++++++++++++");
+            System.out.println("+    Song deleted successfully    +");
+            System.out.println("+++++++++++++++++++++++++++++++++++\n");
         }catch (Exception e){
             System.out.println("Error inserting song.");
             e.printStackTrace(System.out);
@@ -144,13 +147,14 @@ public class SongService {
             pstmt.setInt(3, newSong.getArtistId());
             pstmt.setInt(4, newSong.getId());
             pstmt.executeUpdate();
-            System.out.println("Song updated successfully.");
             getSongById(newSong.getId());
+            System.out.println("\n+++++++++++++++++++++++++++++++++++");
+            System.out.println("+    Song updated successfully    +");
+            System.out.println("+++++++++++++++++++++++++++++++++++\n");
         }catch (Exception e){
             System.out.println("Error inserting song.");
             e.printStackTrace(System.out);
         }
-
     }
 
     //Get song object to update
