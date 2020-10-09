@@ -1,12 +1,8 @@
-package utility;
+package com.sovanreach.utility;
 
-import model.Song;
-import service.SongService;
+import com.sovanreach.model.Song;
+import com.sovanreach.service.SongService;
 
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.Statement;
 import java.util.Scanner;
 
 public class Utility {
@@ -123,6 +119,26 @@ public class Utility {
     }
 
     public static  void updateSong(){
+        int songId = 0;
+        System.out.println("===> Update a song ");
+        do {
+            System.out.print("Enter song ID: ");
+            Scanner scanner = new Scanner(System.in);
+            if (scanner.hasNextInt()){
+                songId = scanner.nextInt();
+            }else {
+                songId = validateOption(scanner.next());
+            }
+        }while (songId == 0);
+        Scanner scanner = new Scanner(System.in);
+        System.out.print("Title => ");
+        String title = scanner.nextLine();
+        System.out.print("Year => ");
+        int releaseYear = scanner.nextInt();
+        System.out.print("Artist ID => ");
+        int artistId = scanner.nextInt();
+        Song song  = new Song(songId, title, releaseYear, artistId);
+        SongService.updateSong(song);
 
     }
 

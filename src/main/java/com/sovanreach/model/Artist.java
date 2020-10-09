@@ -1,4 +1,4 @@
-package model;
+package com.sovanreach.model;
 
 public class Artist {
     private int id;

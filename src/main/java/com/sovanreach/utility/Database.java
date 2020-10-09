@@ -1,4 +1,4 @@
-package utility;
+package com.sovanreach.utility;
 
 import java.sql.Connection;
 import java.sql.DriverManager;
@@ -8,9 +8,9 @@ import java.util.Properties;
 public class Database {
     // init database constants
     private static final String DATABASE_DRIVER = "com.mysql.cj.jdbc.Driver";
-    private static final String DATABASE_URL = "jdbc:mysql://lab.sovanreach.com:3306/test";
+    private static final String DATABASE_URL = "jdbc:mysql://localhost:3306/test";
     private static final String USERNAME = "root";
-    private static final String PASSWORD = "root";
+    private static final String PASSWORD = "reach1998";
     private static final String MAX_POOL = "250";
     private static Connection connection;
     private static Properties properties;
@@ -21,7 +21,7 @@ public class Database {
                 Class.forName(DATABASE_DRIVER);
                 connection = DriverManager.getConnection(DATABASE_URL, getProperties());
             } catch (ClassNotFoundException | SQLException e) {
-                e.printStackTrace();
+                e.printStackTrace(System.out);
             }
         }else {
             System.out.println("Connected");

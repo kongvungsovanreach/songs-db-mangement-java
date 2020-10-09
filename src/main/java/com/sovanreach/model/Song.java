@@ -1,4 +1,4 @@
-package model;
+package com.sovanreach.model;
 
 public class Song {
     private int id;
