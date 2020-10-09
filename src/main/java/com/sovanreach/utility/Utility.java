@@ -61,8 +61,8 @@ public class Utility {
     //Print menu
     private static void printMenu(){
         System.out.println("1. Show all songs");
-        System.out.println("2. Add a song");
-        System.out.println("3. Find a song");
+        System.out.println("2. Find a song");
+        System.out.println("3. Add a song");
         System.out.println("4. Delete a song");
         System.out.println("5. Update a song");
     }
