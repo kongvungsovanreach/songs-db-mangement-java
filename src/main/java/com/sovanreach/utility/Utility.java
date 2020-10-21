@@ -166,7 +166,7 @@ public class Utility {
             Scanner scanner = new Scanner(System.in);
             System.out.print("Song Type (Modern, Classic) => ");
             artistType = scanner.nextLine();
-            if(!artistType.toLowerCase().equals("modern") || artistType.toLowerCase().equals("classic")){
+            if(!artistType.toLowerCase().equals("modern") || !artistType.toLowerCase().equals("classic")){
                 isError = true;
             }else {
                 isError = false;
@@ -178,13 +178,13 @@ public class Utility {
 
     //Print table header
     public static void printHeader(){
-        System.out.format("+-----+----------------------+--------+---------------------+-------------+---------------+%n");
-        System.out.format("| ID  |        TITLE         |   YEAR |     ARTIST NAME     | ARTIST TYPE |  ARTIST NAT.  |%n");
-        System.out.format("+-----+----------------------+--------+---------------------+-------------+---------------+%n");
+        System.out.format("+-----+------------------------------------------+--------+---------------------+-------------+-------------------------+%n");
+        System.out.format("| ID  |                  TITLE                   |   YEAR |     ARTIST NAME     | ARTIST TYPE |       ARTIST NAT.       |%n");
+        System.out.format("+-----+------------------------------------------+--------+---------------------+-------------+-------------------------+%n");
     }
 
     //Print table footer
     public static void printFooter(){
-        System.out.format("+-----+----------------------+--------+---------------------+-------------+---------------+%n");
+        System.out.format("+-----+------------------------------------------+--------+---------------------+-------------+-------------------------+%n");
     }
 }

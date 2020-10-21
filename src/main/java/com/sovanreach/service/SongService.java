@@ -11,14 +11,14 @@ public class SongService {
     private static Connection connection = Database.connect();
     private static Statement stmt = null;
     private static PreparedStatement pstmt = null;
-    private static String leftAlignFormat = "| %-3d | %-20s | %-6d | %-19s | %-11s | %-13s |%n";
+    private static String leftAlignFormat = "| %-3d | %-40s | %-6d | %-19s | %-11s | %-23s |%n";
     //SQL stored variables
-    private static String SELECT_ALL_SQL = "SELECT * FROM songs as s INNER JOIN artists as a on s.artist_id = a.id ";
-    private static String SELECT_ONE_SQL = "SELECT * FROM songs as s INNER JOIN artists as a on s.artist_id = a.id where s.id = ? ";
+    private static String SELECT_ALL_SQL = "SELECT * FROM songs INNER JOIN artists on songs.artist_id = artists.id ";
+    private static String SELECT_ONE_SQL = "SELECT * FROM songs  INNER JOIN artists on songs.artist_id = artists.id where songs.id = ? ";
     private static String INSERT__SQL = "INSERT INTO songs(title, release_year, artist_id) VALUES(?,?,?)";
-    private static String SELECT_LAST_SQL = "SELECT * FROM songs as s INNER JOIN artists as a on s.artist_id = a.id ORDER BY s.id DESC LIMIT 1";
-    private static String DELETE_SQL = "DELETE FROM songs as s WHERE s.id = ?";
-    private static String UPDATE_SQL = "UPDATE songs as s SET title = ?, release_year = ?, artist_id = ? where s.id = ? ";
+    private static String SELECT_LAST_SQL = "SELECT * FROM songs INNER JOIN artists on songs.artist_id = artists.id ORDER BY songs.id DESC LIMIT 1";
+    private static String DELETE_SQL = "DELETE FROM songs  WHERE songs.id = ?";
+    private static String UPDATE_SQL = "UPDATE songs SET title = ?, release_year = ?, artist_id = ? where songs.id = ? ";
 
     //Get all song from database
     public static void getAllSongs(){
@@ -113,12 +113,18 @@ public class SongService {
     //Delete a specific song by given id
     public static void deleteSong(int songId){
         try {
-            pstmt = connection.prepareStatement(DELETE_SQL);
-            pstmt.setInt(1, songId);
-            pstmt.executeUpdate();
-            System.out.println("\n+++++++++++++++++++++++++++++++++++");
-            System.out.println("+    Song deleted successfully    +");
-            System.out.println("+++++++++++++++++++++++++++++++++++\n");
+            if(getSongObject(songId) != null){
+                pstmt = connection.prepareStatement(DELETE_SQL);
+                pstmt.setInt(1, songId);
+                pstmt.executeUpdate();
+                System.out.println("\n+++++++++++++++++++++++++++++++++++");
+                System.out.println("+    Song deleted successfully    +");
+                System.out.println("+++++++++++++++++++++++++++++++++++\n");
+            }else {
+                System.out.println("\n+++++++++++++++++++++++++++++++++++");
+                System.out.println("+   Not Found Song for deletion.  +");
+                System.out.println("+++++++++++++++++++++++++++++++++++\n");
+            }
         }catch (Exception e){
             System.out.println("Error inserting song.");
             e.printStackTrace(System.out);
@@ -127,28 +133,34 @@ public class SongService {
 
     //Update a specific song by given id
     public static  void updateSong(Song newSong){
-        Song oldSong = getSongObject(newSong.getId());
-        if(oldSong.getTitle() == ""){
-            newSong.setTitle(oldSong.getTitle());
-        }
-        if(oldSong.getReleaseYear() == 0){
-            newSong.setReleaseYear(oldSong.getReleaseYear());
-        }
-        if (oldSong.getArtistId() == 0){
-            newSong.setArtistId(oldSong.getArtistId());
-        }
-
+        System.out.println(getSongObject(newSong.getId()));
         try {
-            pstmt = connection.prepareStatement(UPDATE_SQL);
-            pstmt.setString(1, newSong.getTitle());
-            pstmt.setInt(2, newSong.getReleaseYear());
-            pstmt.setInt(3, newSong.getArtistId());
-            pstmt.setInt(4, newSong.getId());
-            pstmt.executeUpdate();
-            getSongById(newSong.getId());
-            System.out.println("\n+++++++++++++++++++++++++++++++++++");
-            System.out.println("+    Song updated successfully    +");
-            System.out.println("+++++++++++++++++++++++++++++++++++\n");
+            if(getSongObject(newSong.getId()) != null){
+                Song oldSong = getSongObject(newSong.getId());
+                if(oldSong.getTitle() == ""){
+                    newSong.setTitle(oldSong.getTitle());
+                }
+                if(oldSong.getReleaseYear() == 0){
+                    newSong.setReleaseYear(oldSong.getReleaseYear());
+                }
+                if (oldSong.getArtistId() == 0){
+                    newSong.setArtistId(oldSong.getArtistId());
+                }
+                pstmt = connection.prepareStatement(UPDATE_SQL);
+                pstmt.setString(1, newSong.getTitle());
+                pstmt.setInt(2, newSong.getReleaseYear());
+                pstmt.setInt(3, newSong.getArtistId());
+                pstmt.setInt(4, newSong.getId());
+                pstmt.executeUpdate();
+                getSongById(newSong.getId());
+                System.out.println("\n+++++++++++++++++++++++++++++++++++");
+                System.out.println("+    Song updated successfully    +");
+                System.out.println("+++++++++++++++++++++++++++++++++++\n");
+            }else {
+                System.out.println("\n+++++++++++++++++++++++++++++++++++");
+                System.out.println("+    NOT Found Song for update    +");
+                System.out.println("+++++++++++++++++++++++++++++++++++\n");
+            }
         }catch (Exception e){
             System.out.println("Error inserting song.");
             e.printStackTrace(System.out);
@@ -163,10 +175,10 @@ public class SongService {
             pstmt.setInt(1, songId);
             ResultSet rs = pstmt.executeQuery();
             while(rs.next()){
-                int id  = rs.getInt("id");
+                int id  = rs.getInt("songs.id");
                 String title = rs.getString("title");
                 int releaseYear = rs.getInt("release_year");
-                int artistID = rs.getInt("a.id");
+                int artistID = rs.getInt("artists.id");
                 song = new Song(id, title, releaseYear, artistID);
             }
             rs.close();
