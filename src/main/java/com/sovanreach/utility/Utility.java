@@ -2,6 +2,7 @@ package com.sovanreach.utility;
 
 import com.sovanreach.model.Song;
 import com.sovanreach.service.SongService;
+import com.sun.org.apache.bcel.internal.generic.INSTANCEOF;
 
 import java.util.Scanner;
 
@@ -51,6 +52,8 @@ public class Utility {
                     updateSong();
                     showMenu = true;
                     break;
+                case 6:
+                    countArtistByType();
                 default:
                     showMenu = false;
                     System.out.println("Incorrect option.");
@@ -65,6 +68,7 @@ public class Utility {
         System.out.println("3. Add a song");
         System.out.println("4. Delete a song");
         System.out.println("5. Update a song");
+        System.out.println("6. Count songs by type");
     }
 
     //Validate the valid given option
@@ -151,6 +155,24 @@ public class Utility {
         int artistId = scanner.nextInt();
         Song song  = new Song(songId, title, releaseYear, artistId);
         SongService.updateSong(song);
+
+    }
+
+    public static void countArtistByType(){
+        boolean isError = true;
+        String artistType;
+        do{
+            System.out.println("===>  Count songs by type");
+            Scanner scanner = new Scanner(System.in);
+            System.out.print("Song Type (Modern, Classic) => ");
+            artistType = scanner.nextLine();
+            if(!artistType.toLowerCase().equals("modern") || artistType.toLowerCase().equals("classic")){
+                isError = true;
+            }else {
+                isError = false;
+            }
+        } while (isError);
+        SongService.countArtistByType(artistType);
 
     }
 

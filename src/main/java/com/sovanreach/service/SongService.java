@@ -3,10 +3,8 @@ package com.sovanreach.service;
 import com.sovanreach.model.Song;
 import com.sovanreach.utility.Database;
 import com.sovanreach.utility.Utility;
-import java.sql.Connection;
-import java.sql.PreparedStatement;
-import java.sql.ResultSet;
-import java.sql.Statement;
+
+import java.sql.*;
 
 public class SongService {
     //Constants declaration
@@ -176,6 +174,20 @@ public class SongService {
             e.printStackTrace(System.out);
         }
         return song;
+    }
+
+    //Count songs by song type using SQL function call
+    public static void countArtistByType(String artistType){
+        try{
+            CallableStatement cstmt = connection.prepareCall("{? = CALL countArtistBySongType(?)}");
+            cstmt.registerOutParameter(1, Types.INTEGER);
+            cstmt.setString(2, artistType);
+            cstmt.executeUpdate();
+            int artistCount= cstmt.getInt(1);
+            System.out.println("\nCount of artists type "+artistType+" is "+artistCount+" artist.\n");
+        }catch (Exception e){
+            System.out.println("Error counting artish!");
+        }
     }
 }
 
