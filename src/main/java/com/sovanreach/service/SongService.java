@@ -133,7 +133,6 @@ public class SongService {
 
     //Update a specific song by given id
     public static  void updateSong(Song newSong){
-        System.out.println(getSongObject(newSong.getId()));
         try {
             if(getSongObject(newSong.getId()) != null){
                 Song oldSong = getSongObject(newSong.getId());
@@ -196,7 +195,9 @@ public class SongService {
             cstmt.setString(2, artistType);
             cstmt.executeUpdate();
             int artistCount= cstmt.getInt(1);
-            System.out.println("\nCount of artists type "+artistType+" is "+artistCount+" artist.\n");
+            System.out.println("\n+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++");
+            System.out.println("+                Count of artists type "+artistType+" is "+artistCount+" artists             +");
+            System.out.println("+++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++\n");
         }catch (Exception e){
             System.out.println("Error counting artish!");
         }

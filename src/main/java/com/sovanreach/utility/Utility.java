@@ -54,6 +54,7 @@ public class Utility {
                     break;
                 case 6:
                     countArtistByType();
+                    break;
                 default:
                     showMenu = false;
                     System.out.println("Incorrect option.");
@@ -166,7 +167,7 @@ public class Utility {
             Scanner scanner = new Scanner(System.in);
             System.out.print("Song Type (Modern, Classic) => ");
             artistType = scanner.nextLine();
-            if(!artistType.toLowerCase().equals("modern") || !artistType.toLowerCase().equals("classic")){
+            if(!artistType.toLowerCase().equals("modern") && !artistType.toLowerCase().equals("classic")){
                 isError = true;
             }else {
                 isError = false;

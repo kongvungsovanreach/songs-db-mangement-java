@@ -2,120 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="5fbca6db-e568-427b-84c5-d4413ad7ccd3" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/database-assignment.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/compiler.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/compiler.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/pom.xml" beforeDir="false" afterPath="$PROJECT_DIR$/pom.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sovanreach/service/SongService.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sovanreach/service/SongService.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/main/java/com/sovanreach/utility/Database.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sovanreach/utility/Database.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/com/sovanreach/utility/Utility.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/com/sovanreach/utility/Utility.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sovanreach/Main.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sovanreach/Main.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sovanreach/model/Artist.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sovanreach/model/Artist.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sovanreach/model/Song.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sovanreach/model/Song.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sovanreach/service/SongService.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sovanreach/service/SongService.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/target/classes/com/sovanreach/utility/Utility.class" beforeDir="false" afterPath="$PROJECT_DIR$/target/classes/com/sovanreach/utility/Utility.class" afterDir="false" />
     </list>
-    <ignored path="$PROJECT_DIR$/target/" />
-    <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
-  </component>
-  <component name="FUSProjectUsageTrigger">
-    <session id="881953218">
-      <usages-collector id="statistics.lifecycle.project">
-        <counts>
-          <entry key="project.closed" value="4" />
-          <entry key="project.open.time.0" value="1" />
-          <entry key="project.open.time.1" value="1" />
-          <entry key="project.open.time.11" value="1" />
-          <entry key="project.open.time.8" value="2" />
-          <entry key="project.opened" value="5" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.open">
-        <counts>
-          <entry key="java" value="4" />
-          <entry key="sql" value="1" />
-          <entry key="xml" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.open">
-        <counts>
-          <entry key="JAVA" value="4" />
-          <entry key="SQL" value="1" />
-          <entry key="XML" value="2" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.extensions.edit">
-        <counts>
-          <entry key="java" value="3081" />
-          <entry key="sql" value="29" />
-          <entry key="xml" value="36" />
-        </counts>
-      </usages-collector>
-      <usages-collector id="statistics.file.types.edit">
-        <counts>
-          <entry key="JAVA" value="3081" />
-          <entry key="SQL" value="29" />
-          <entry key="XML" value="36" />
-        </counts>
-      </usages-collector>
-    </session>
-  </component>
-  <component name="FileEditorManager">
-    <leaf SIDE_TABS_SIZE_LIMIT_KEY="375">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sovanreach/Main.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="95">
-              <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sovanreach/utility/Database.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-229">
-              <caret line="13" column="49" lean-forward="true" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sovanreach/utility/Utility.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="381">
-              <caret line="165" column="53" lean-forward="true" selection-start-line="165" selection-start-column="53" selection-end-line="165" selection-end-column="53" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sovanreach/DDL.sql">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="323">
-              <caret line="17" column="51" lean-forward="true" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/java/com/sovanreach/service/SongService.java">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="136">
-              <caret line="175" column="48" selection-start-line="175" selection-start-column="48" selection-end-line="175" selection-end-column="48" />
-              <folding>
-                <element signature="imports" expanded="true" />
-              </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/pom.xml">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="551">
-              <caret line="29" column="40" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
-            </state>
-          </provider>
-        </entry>
-      </file>
-    </leaf>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
@@ -124,35 +27,8 @@
       </list>
     </option>
   </component>
-  <component name="FindInProjectRecents">
-    <findStrings>
-      <find>s.id</find>
-      <find>as</find>
-    </findStrings>
-  </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
-  </component>
-  <component name="IdeDocumentHistory">
-    <option name="CHANGED_PATHS">
-      <list>
-        <option value="$PROJECT_DIR$/src/main/java/utility/Database.java" />
-        <option value="$PROJECT_DIR$/src/main/java/utility/Utility.java" />
-        <option value="$PROJECT_DIR$/src/main/java/service/SongService.java" />
-        <option value="$PROJECT_DIR$/pom.xml" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sovanreach/Main.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sovanreach/DDL.sql" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sovanreach/utility/Database.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sovanreach/service/SongService.java" />
-        <option value="$PROJECT_DIR$/src/main/java/com/sovanreach/utility/Utility.java" />
-      </list>
-    </option>
-  </component>
-  <component name="JsBuildToolGruntFileManager" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsBuildToolPackageJson" detection-done="true" sorting="DEFINITION_ORDER" />
-  <component name="JsGulpfileManager">
-    <detection-done>true</detection-done>
-    <sorting>DEFINITION_ORDER</sorting>
   </component>
   <component name="ProjectFrameBounds">
     <option name="y" value="23" />
@@ -162,67 +38,6 @@
   <component name="ProjectId" id="1idJko6uiuKpxYLfFzVmwAdn568" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true">
     <ConfirmationsSetting value="2" id="Add" />
-  </component>
-  <component name="ProjectView">
-    <navigator proportions="" version="1">
-      <foldersAlwaysOnTop value="true" />
-    </navigator>
-    <panes>
-      <pane id="AndroidView" />
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <expand>
-            <path>
-              <item name="database-assignment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="database-assignment" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="database-assignment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="database-assignment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="database-assignment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="database-assignment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="database-assignment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="database-assignment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="database-assignment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="database-assignment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="database-assignment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="database-assignment" type="462c0819:PsiDirectoryNode" />
-              <item name="src" type="462c0819:PsiDirectoryNode" />
-              <item name="main" type="462c0819:PsiDirectoryNode" />
-              <item name="java" type="462c0819:PsiDirectoryNode" />
-              <item name="com" type="462c0819:PsiDirectoryNode" />
-              <item name="sovanreach" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="database-assignment" type="b2602c69:ProjectViewProjectNode" />
-              <item name="database-assignment" type="462c0819:PsiDirectoryNode" />
-              <item name="target" type="462c0819:PsiDirectoryNode" />
-            </path>
-          </expand>
-          <select />
-        </subPane>
-      </pane>
-      <pane id="PackagesPane" />
-    </panes>
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
@@ -243,22 +58,10 @@
     <property name="settings.editor.selected.configurable" value="preferences.keymap" />
     <property name="show.migrate.to.gradle.popup" value="false" />
   </component>
-  <component name="RunDashboard">
-    <option name="ruleStates">
-      <list>
-        <RuleState>
-          <option name="name" value="ConfigurationTypeDashboardGroupingRule" />
-        </RuleState>
-        <RuleState>
-          <option name="name" value="StatusDashboardGroupingRule" />
-        </RuleState>
-      </list>
-    </option>
-  </component>
   <component name="RunManager">
     <configuration name="Main" type="Application" factoryName="Application" temporary="true" nameIsGenerated="true">
       <option name="MAIN_CLASS_NAME" value="com.sovanreach.Main" />
-      <module name="DatabaseProject" />
+      <module name="database-assignment" />
       <method v="2">
         <option name="Make" enabled="true" />
       </method>
@@ -285,74 +88,45 @@
       <workItem from="1602314844961" duration="543000" />
       <workItem from="1602992402037" duration="529000" />
       <workItem from="1603290260258" duration="4999000" />
+      <workItem from="1603338655787" duration="836000" />
     </task>
     <servers />
-  </component>
-  <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="12661000" />
-  </component>
-  <component name="ToolWindowManager">
-    <frame x="0" y="23" width="1920" height="1177" extended-state="0" />
-    <layout>
-      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.19688842" />
-      <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
-      <window_info id="Designer" order="2" />
-      <window_info id="Image Layers" order="3" />
-      <window_info id="Favorites" order="4" side_tool="true" />
-      <window_info id="Capture Tool" order="5" />
-      <window_info id="UI Designer" order="6" />
-      <window_info anchor="bottom" id="Message" order="0" />
-      <window_info anchor="bottom" id="Find" order="1" />
-      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.41917294" />
-      <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
-      <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
-      <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
-      <window_info anchor="bottom" id="TODO" order="6" />
-      <window_info anchor="bottom" id="Terminal" order="7" weight="0.3298872" />
-      <window_info anchor="bottom" id="Event Log" order="8" side_tool="true" />
-      <window_info anchor="bottom" id="Messages" order="9" weight="0.3298872" />
-      <window_info anchor="bottom" id="Database Changes" order="10" show_stripe_button="false" />
-      <window_info anchor="bottom" id="Version Control" order="11" />
-      <window_info anchor="bottom" id="Flutter Performance" order="12" side_tool="true" />
-      <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
-      <window_info anchor="right" id="Ant Build" order="1" weight="0.25" />
-      <window_info anchor="right" content_ui="combo" id="Hierarchy" order="2" weight="0.25" />
-      <window_info anchor="right" id="Palette" order="3" />
-      <window_info anchor="right" id="Flutter Inspector" order="4" />
-      <window_info anchor="right" id="Capture Analysis" order="5" />
-      <window_info anchor="right" id="Flutter Outline" order="6" />
-      <window_info anchor="right" id="Maven Projects" order="7" />
-      <window_info anchor="right" id="Database" order="8" />
-      <window_info anchor="right" id="Palette&#9;" order="9" />
-      <window_info anchor="right" id="Theme Preview" order="10" />
-    </layout>
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="1" />
   </component>
-  <component name="VcsContentAnnotationSettings">
-    <option name="myLimit" value="2678400000" />
-  </component>
   <component name="WindowStateProjectService">
+    <state x="734" y="347" width="1241" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1603338934498">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state x="734" y="347" width="1241" height="706" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1603338934498" />
     <state x="1020" y="347" key="#com.intellij.ide.util.MemberChooser" timestamp="1602232427699">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="1020" y="347" key="#com.intellij.ide.util.MemberChooser/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1602232427699" />
-    <state width="2505" height="370" key="GridCell.Tab.0.bottom" timestamp="1602249236190">
+    <state x="1021" y="440" key="#com.intellij.ide.util.TreeClassChooserDialog" timestamp="1603338920450">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state x="1021" y="440" key="#com.intellij.ide.util.TreeClassChooserDialog/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1603338920450" />
+    <state width="2505" height="433" key="GridCell.Tab.0.bottom" timestamp="1603339649254">
+      <screen x="0" y="0" width="2560" height="1400" />
+    </state>
+    <state width="2505" height="433" key="GridCell.Tab.0.bottom/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1603339649254" />
     <state width="2505" height="370" key="GridCell.Tab.0.bottom/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1602249236190" />
-    <state width="2505" height="370" key="GridCell.Tab.0.center" timestamp="1602249236190">
+    <state width="2505" height="433" key="GridCell.Tab.0.center" timestamp="1603339649254">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state width="2505" height="433" key="GridCell.Tab.0.center/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1603339649254" />
     <state width="2505" height="370" key="GridCell.Tab.0.center/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1602249236190" />
-    <state width="2505" height="370" key="GridCell.Tab.0.left" timestamp="1602249236189">
+    <state width="2505" height="433" key="GridCell.Tab.0.left" timestamp="1603339649253">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state width="2505" height="433" key="GridCell.Tab.0.left/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1603339649253" />
     <state width="2505" height="370" key="GridCell.Tab.0.left/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1602249236189" />
-    <state width="2505" height="370" key="GridCell.Tab.0.right" timestamp="1602249236190">
+    <state width="2505" height="433" key="GridCell.Tab.0.right" timestamp="1603339649254">
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
+    <state width="2505" height="433" key="GridCell.Tab.0.right/0.0.2560.1400/2560.0.2560.1400@0.0.2560.1400" timestamp="1603339649254" />
     <state width="2505" height="370" key="GridCell.Tab.0.right/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1602249236190" />
     <state x="687" y="255" key="SettingsEditor" timestamp="1602235956265">
       <screen x="0" y="0" width="2560" height="1400" />
@@ -370,53 +144,6 @@
       <screen x="0" y="0" width="2560" height="1400" />
     </state>
     <state x="947" y="410" key="extract.method.dialog/2560.0.2560.1400/0.0.2560.1400@0.0.2560.1400" timestamp="1602246522040" />
-  </component>
-  <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sovanreach/Main.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="95">
-          <caret line="5" column="28" selection-start-line="5" selection-start-column="28" selection-end-line="5" selection-end-column="28" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/pom.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="551">
-          <caret line="29" column="40" selection-start-line="29" selection-start-column="40" selection-end-line="29" selection-end-column="40" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sovanreach/DDL.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="323">
-          <caret line="17" column="51" lean-forward="true" selection-start-line="17" selection-start-column="51" selection-end-line="17" selection-end-column="51" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sovanreach/utility/Database.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="-229">
-          <caret line="13" column="49" lean-forward="true" selection-start-line="13" selection-start-column="49" selection-end-line="13" selection-end-column="49" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sovanreach/service/SongService.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="136">
-          <caret line="175" column="48" selection-start-line="175" selection-start-column="48" selection-end-line="175" selection-end-column="48" />
-          <folding>
-            <element signature="imports" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/sovanreach/utility/Utility.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="381">
-          <caret line="165" column="53" lean-forward="true" selection-start-line="165" selection-start-column="53" selection-end-line="165" selection-end-column="53" />
-        </state>
-      </provider>
-    </entry>
   </component>
   <component name="masterDetails">
     <states>
